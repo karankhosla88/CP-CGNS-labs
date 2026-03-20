@@ -21,3 +21,8 @@ allow_upload_download = true
 vnet_name             = "vnet-challenger-ha-lab"
 frontend_subnet_name  = "frontend-subnet"
 backend_subnet_name   = "backend-subnet"
+
+smart_1_cloud_token_a          = ""
+smart_1_cloud_token_b          = ""
+serial_console_password_hash   = ""
+maintenance_mode_password_hash = ""
