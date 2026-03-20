@@ -6,7 +6,7 @@ client_id             = "328fe9ac-21e1-4f5c-aa96-365bec5dab71"
 resource_group_name   = "rg-challenger-ha-lab"
 cluster_name          = "cp-ha-lab"
 location              = "East US"
-availability_type   = "Availability Zone"
+availability_type   = "Availability Set"
 
 authentication_type   = "Password"
 admin_password        = "Cpadmin@123456"
