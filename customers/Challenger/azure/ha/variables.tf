@@ -76,3 +76,23 @@ variable "frontend_subnet_name" {
 variable "backend_subnet_name" {
   type = string
 }
+
+variable "smart_1_cloud_token_a" {
+  type      = string
+  sensitive = true
+}
+
+variable "smart_1_cloud_token_b" {
+  type      = string
+  sensitive = true
+}
+
+variable "serial_console_password_hash" {
+  type      = string
+  sensitive = true
+}
+
+variable "maintenance_mode_password_hash" {
+  type      = string
+  sensitive = true
+}
