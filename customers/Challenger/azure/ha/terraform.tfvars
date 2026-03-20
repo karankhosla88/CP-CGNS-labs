@@ -5,9 +5,10 @@ client_id             = "328fe9ac-21e1-4f5c-aa96-365bec5dab71"
 
 resource_group_name   = "rg-challenger-ha-lab"
 cluster_name          = "cp-ha-lab"
-location              = "Australia East"
+location              = "East US"
+availability_type   = "Availability Zones"
 
-authentication_type   = "password"
+authentication_type   = "Password"
 admin_password        = "Cpadmin@123456"
 sic_key               = "123456789012"
 
