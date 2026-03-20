@@ -36,4 +36,13 @@ jobs:
         run: terraform validate
 
       - name: Terraform Plan
-        run: terraform plan -no-color
+        run: |
+          terraform plan -no-color -out=tfplan -detailed-exitcode
+          code=$?
+          if [ $code -eq 1 ]; then
+            exit 1
+          fi
+          exit 0
+
+      - name: Show Terraform Plan
+        run: terraform show -no-color tfplan
