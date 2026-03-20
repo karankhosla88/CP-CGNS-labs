@@ -96,3 +96,7 @@ variable "maintenance_mode_password_hash" {
   type      = string
   sensitive = true
 }
+
+variable "availability_type" {
+  type = string
+}
