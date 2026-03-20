@@ -1,7 +1,7 @@
 subscription_id       = "1634dd67-11c7-40f9-a6c3-4bc9866ad8ae"
 tenant_id             = "01605c2e-84df-4dfc-af6c-4f706350e670"
 client_id             = "328fe9ac-21e1-4f5c-aa96-365bec5dab71"
-client_secret         = "replace-me"
+client_secret         = "Declared_on_stack_info_in_environments"
 
 resource_group_name   = "rg-challenger-ha-lab"
 cluster_name          = "cp-ha-lab"
