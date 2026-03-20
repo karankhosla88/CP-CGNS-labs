@@ -1,5 +1,5 @@
 module "cloudguard_ha" {
-  source = "git::https://github.com/CheckPointSW/terraform-azure-cloudguard-network-security.git//modules/high-availability?ref=master"
+  source = "git::https://github.com/CheckPointSW/terraform-azure-cloudguard-network-security.git//modules/high-availability?ref=9f6d6a0"
 
   subscription_id      = var.subscription_id
   tenant_id            = var.tenant_id
