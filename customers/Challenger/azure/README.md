@@ -1,1 +1,1 @@
-Azure lab for testing CGNS HA solution for Challenger Group using Terraform and CI/CD pipleline on Spacelift.
+This is repository for Challenger for all Azure related solutions.
