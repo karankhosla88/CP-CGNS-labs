@@ -8,6 +8,7 @@ module "cloudguard_ha" {
   resource_group_name  = var.resource_group_name
   cluster_name         = var.cluster_name
   location             = var.location
+  availability_type = var.availability_type
   authentication_type  = var.authentication_type
   admin_password       = var.admin_password
   sic_key              = var.sic_key
