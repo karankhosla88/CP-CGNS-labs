@@ -136,3 +136,7 @@ variable "storage_account_additional_ips" {
   type    = list(string)
   default = []
 }
+
+variable "existing_vnet_resource_group" {
+  type = string
+}
