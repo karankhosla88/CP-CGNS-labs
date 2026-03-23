@@ -24,6 +24,9 @@ existing_vnet_resource_group  = "rg-challenger-ha-lab"
 frontend_subnet_name          = "r8120-frontend-subnet"
 backend_subnet_name           = "r8120-backend-subnet"
 
+address_space                 = ""
+subnet_prefixes               = []
+
 smart_1_cloud_token_a          = ""
 smart_1_cloud_token_b          = ""
 serial_console_password_hash   = ""
