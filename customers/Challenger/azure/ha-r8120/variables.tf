@@ -69,6 +69,10 @@ variable "vnet_name" {
   type = string
 }
 
+variable "existing_vnet_resource_group" {
+  type = string
+}
+
 variable "frontend_subnet_name" {
   type = string
 }
