@@ -29,6 +29,15 @@ jobs:
       - name: Show Terraform version
         run: terraform version
 
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          creds: >-
+            {"clientId":"${{ vars.AZURE_CLIENT_ID }}",
+             "clientSecret":"${{ secrets.AZURE_CLIENT_SECRET }}",
+             "subscriptionId":"${{ vars.AZURE_SUBSCRIPTION_ID }}",
+             "tenantId":"${{ vars.AZURE_TENANT_ID }}"}
+
       - name: Terraform Init
         run: |
           terraform init \
