@@ -13,15 +13,16 @@ admin_password        = "Cpadmin@123456"
 sic_key               = "123456789012"
 
 vm_size               = "Standard_D4s_v5"
-disk_size             = "110"
+disk_size             = "100"
 os_version            = "R8120"
 vm_os_sku             = "sg-byol"
 vm_os_offer           = "check-point-cg-r8120"
 allow_upload_download = true
 
-vnet_name             = "vnet-challenger-ha-lab"
-frontend_subnet_name  = "frontend-subnet"
-backend_subnet_name   = "backend-subnet"
+vnet_name                     = "vnet-challenger-ha-lab"
+existing_vnet_resource_group  = "rg-challenger-ha-lab"
+frontend_subnet_name          = "r8120-frontend-subnet"
+backend_subnet_name           = "r8120-backend-subnet"
 
 smart_1_cloud_token_a          = ""
 smart_1_cloud_token_b          = ""
