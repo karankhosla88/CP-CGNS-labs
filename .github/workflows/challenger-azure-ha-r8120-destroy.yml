@@ -1,0 +1,42 @@
+name: Challenger Azure HA R8120 Destroy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: customers/Challenger/azure/ha-r8120
+
+    env:
+      TF_VAR_client_secret: ${{ secrets.AZURE_CLIENT_SECRET }}
+
+      ARM_CLIENT_ID: ${{ vars.AZURE_CLIENT_ID }}
+      ARM_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+      ARM_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+      ARM_TENANT_ID: ${{ vars.AZURE_TENANT_ID }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.9.5
+
+      - name: Show Terraform version
+        run: terraform version
+
+      - name: Terraform Init
+        run: |
+          terraform init \
+            -backend-config="resource_group_name=rg-tfstate-lab" \
+            -backend-config="storage_account_name=YOUR_STORAGE_ACCOUNT_NAME" \
+            -backend-config="container_name=tfstate" \
+            -backend-config="key=challenger-azure-ha-r8120.tfstate"
+
+      - name: Terraform Destroy
+        run: terraform destroy -auto-approve
