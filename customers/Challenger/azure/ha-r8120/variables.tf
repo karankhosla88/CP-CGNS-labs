@@ -104,3 +104,11 @@ variable "maintenance_mode_password_hash" {
 variable "availability_type" {
   type = string
 }
+
+variable "address_space" {
+  type = string
+}
+
+variable "subnet_prefixes" {
+  type = list(string)
+}
