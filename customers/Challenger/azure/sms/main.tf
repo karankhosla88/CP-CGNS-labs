@@ -1,7 +1,3 @@
-provider "azurerm" {
-  features {}
-}
-
 module "cloudguard_sms" {
   source = "git::https://github.com/karankhosla88/terraform-azure-cloudguard-network-security.git//modules/management?ref=master"
 
