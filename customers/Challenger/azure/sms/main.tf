@@ -31,6 +31,7 @@ module "cloudguard_sms" {
 
   # Networking Variables
   vnet_name                     = var.vnet_name
+  existing_vnet_resource_group  = var.existing_vnet_resource_group
   subnet_name                   = var.subnet_name
   address_space                 = var.address_space
   subnet_prefix                 = var.subnet_prefix
