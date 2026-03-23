@@ -6,7 +6,7 @@ client_id       = "328fe9ac-21e1-4f5c-aa96-365bec5dab71"
 # Basic Configuration
 resource_group_name = "rg-challenger-sms"
 mgmt_name           = "cp-sms-r82"
-location            = "East US 2"
+location            = "East US"
 tags                = {}
 
 # VM
