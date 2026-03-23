@@ -20,6 +20,13 @@ jobs:
         with:
           terraform_version: 1.9.5
 
-      - run: terraform init
+      - name: Terraform Init
+        run: |
+          terraform init \
+            -backend-config="resource_group_name=rg-tfstate-lab" \
+            -backend-config="storage_account_name=karanktfstate001" \
+            -backend-config="container_name=tfstate" \
+            -backend-config="key=challenger-azure-ha.tfstate"
+            
       - run: terraform plan -out=tfplan
       - run: terraform apply -auto-approve tfplan
