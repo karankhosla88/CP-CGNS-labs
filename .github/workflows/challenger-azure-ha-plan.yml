@@ -30,7 +30,12 @@ jobs:
         run: terraform version
 
       - name: Terraform Init
-        run: terraform init
+        run: |
+          terraform init \
+            -backend-config="resource_group_name=rg-tfstate-lab" \
+            -backend-config="storage_account_name=karanktfstate001" \
+            -backend-config="container_name=tfstate" \
+            -backend-config="key=challenger-azure-ha.tfstate"
 
       - name: Terraform Validate
         run: terraform validate
