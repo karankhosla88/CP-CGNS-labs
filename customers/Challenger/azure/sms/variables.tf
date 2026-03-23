@@ -28,7 +28,7 @@ variable "location" {
 }
 
 variable "tags" {
-  type    = map(string)
+  type    = map(map(string))
   default = {}
 }
 
