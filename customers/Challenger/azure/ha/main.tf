@@ -22,6 +22,7 @@ module "cloudguard_ha" {
   existing_vnet_resource_group = var.existing_vnet_resource_group
   frontend_subnet_name = var.frontend_subnet_name
   backend_subnet_name  = var.backend_subnet_name
+  address_space                = var.address_space
   smart_1_cloud_token_a            = var.smart_1_cloud_token_a
   smart_1_cloud_token_b            = var.smart_1_cloud_token_b
   serial_console_password_hash     = var.serial_console_password_hash
