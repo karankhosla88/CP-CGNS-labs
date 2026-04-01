@@ -107,4 +107,6 @@ variable "existing_vnet_resource_group" {
 variable "address_space" {
   type = string
 }
-
+variable "subnet_prefixes" {
+  type = list(string)
+}
