@@ -24,6 +24,10 @@ vnet_name             = "vnet-challenger-ha-lab"
 frontend_subnet_name  = "r8120-frontend-subnet"
 backend_subnet_name   = "r8120-backend-subnet"
 address_space                 = ""
+subnet_prefixes = [
+  "10.0.100.0/24",  # frontend
+  "10.0.101.0/24"   # backend
+]
 
 smart_1_cloud_token_a          = ""
 smart_1_cloud_token_b          = ""
