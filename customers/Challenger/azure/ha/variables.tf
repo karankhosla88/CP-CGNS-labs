@@ -104,3 +104,7 @@ variable "availability_type" {
 variable "existing_vnet_resource_group" {
   type = string
 }
+variable "address_space" {
+  type = string
+}
+
