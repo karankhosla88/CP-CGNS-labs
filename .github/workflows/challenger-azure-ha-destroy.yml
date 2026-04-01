@@ -1,4 +1,4 @@
-name: Challenger Azure HA R82 Destroy
+name: Challenger Azure HA Destroy
 
 on:
   workflow_dispatch:
