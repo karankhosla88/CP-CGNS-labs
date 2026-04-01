@@ -19,6 +19,7 @@ vm_os_sku             = "sg-byol"
 vm_os_offer           = "check-point-cg-r82"
 allow_upload_download = true
 
+existing_vnet_resource_group  = "rg-challenger-ha-lab"
 vnet_name             = "vnet-challenger-ha-lab"
 frontend_subnet_name  = "r8120-frontend-subnet"
 backend_subnet_name   = "r8120-backend-subnet"
