@@ -1,4 +1,4 @@
-name: Challenger Azure HA Plan
+name: Challenger Azure HA R82 Plan
 
 on:
   workflow_dispatch:
@@ -41,7 +41,7 @@ jobs:
             -backend-config="resource_group_name=rg-tfstate-lab" \
             -backend-config="storage_account_name=karanktfstate001" \
             -backend-config="container_name=tfstate" \
-            -backend-config="key=challenger-azure-ha.tfstate"
+            -backend-config="key=challenger-azure-ha-r82.tfstate"
 
       - name: Terraform Validate
         run: terraform validate
