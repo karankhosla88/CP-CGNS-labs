@@ -19,6 +19,7 @@ module "cloudguard_ha" {
   vm_os_offer          = var.vm_os_offer
   allow_upload_download = var.allow_upload_download
   vnet_name            = var.vnet_name
+  existing_vnet_resource_group = var.existing_vnet_resource_group
   frontend_subnet_name = var.frontend_subnet_name
   backend_subnet_name  = var.backend_subnet_name
   smart_1_cloud_token_a            = var.smart_1_cloud_token_a
