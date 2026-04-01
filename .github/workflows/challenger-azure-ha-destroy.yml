@@ -1,4 +1,4 @@
-name: Challenger Azure HA Destroy
+name: Challenger Azure HA R82 Destroy
 
 on:
   workflow_dispatch:
@@ -36,7 +36,7 @@ jobs:
             -backend-config="resource_group_name=rg-tfstate-lab" \
             -backend-config="storage_account_name=karanktfstate001" \
             -backend-config="container_name=tfstate" \
-            -backend-config="key=challenger-azure-ha.tfstate"
+            -backend-config="key=challenger-azure-ha-r82.tfstate"
 
       - name: Terraform Destroy
         run: terraform destroy -auto-approve
