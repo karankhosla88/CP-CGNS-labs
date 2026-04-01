@@ -100,3 +100,7 @@ variable "maintenance_mode_password_hash" {
 variable "availability_type" {
   type = string
 }
+
+variable "existing_vnet_resource_group" {
+  type = string
+}
